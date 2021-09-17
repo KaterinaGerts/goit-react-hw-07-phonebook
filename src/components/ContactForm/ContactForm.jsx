@@ -5,6 +5,7 @@ import s from './ContactForm.module.css';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { addContact } from 'redux/contacts/contacts-actions';
+import Button from 'components/Button';
 
 const validationSchema = Yup.object({
   name: Yup.string()
@@ -50,9 +51,7 @@ const ContactForm = () => {
           placeholder="+7********"
         />
         <ErrorMessage name="number" />
-        <button  type="submit" className={s.button}>
-          Add contact
-        </button >
+        <Button/>
       </Form>
     </Formik>
   );
