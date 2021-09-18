@@ -18,6 +18,7 @@ const Filter = () => {
         value={value}
         onChange={onChange}
         className={s.input}
+        placeholder="Put the name"
       />
     </label>
   );
