@@ -12,7 +12,7 @@
     border: 2px solid #dcdcdc;
     border-radius: 10px;
     background-color: beige;
-    box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;   
+    box-shadow: rgba(0, 0, 0, .5) 3px 10px 10px -10px;
 }
 
 /* @media screen and (max-width: 768px) {
@@ -27,7 +27,7 @@
 
 .label {
     text-align: left;
-    margin-left: 38px;
+    margin-left: 45px;
     margin-bottom: 5px;
     font-weight: bold;
     font-size: 20px;
@@ -50,16 +50,14 @@
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
-    border: 1px solid rgba(110,121,128,.8);
-  border-top-color: rgba(0,0,0,.3); 
-  background: rgb(89,106,114) linear-gradient( rgb(89,106,114));
-  box-shadow:
-   0 -1px rgba(10,21,28,.9) inset,
-   0 1px rgba(255,255,255,.5) inset;
+    border: 1px solid rgba(110, 121, 128, .8);
+    border-top-color: rgba(0, 0, 0, .3);
+    background: rgb(89, 106, 114) linear-gradient(rgb(89, 106, 114));
+    box-shadow:
+        0 -1px rgba(10, 21, 28, .9) inset,
+        0 1px rgba(255, 255, 255, .5) inset;
 }
 
 .input:last-child {
     margin-bottom: 0;
 }
-
-

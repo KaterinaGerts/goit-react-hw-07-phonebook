@@ -18,7 +18,7 @@ const Filter = () => {
         value={value}
         onChange={onChange}
         className={s.input}
-        placeholder="Put the name for filter your contacts!"
+        placeholder="Put the name to filter your contacts!"
       />
     </label>
   );
