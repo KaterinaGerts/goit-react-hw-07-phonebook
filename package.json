@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.4",
     "formik": "^2.2.9",
+    "json-server": "^0.16.3",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -18,6 +19,7 @@
     "react-toastify": "^7.0.4",
     "redux": "^4.1.1",
     "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0",
     "web-vitals": "^1.1.2",
     "yup": "^0.32.9",
     "yup-phone": "^1.2.19"

@@ -4,7 +4,7 @@ import "yup-phone";
 import s from './ContactForm.module.css';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { addContact } from 'redux/contacts/contacts-actions';
+import { addContact } from 'redux/contacts/contacts-operations';
 import Button from 'components/Button';
 
 const validationSchema = Yup.object({
