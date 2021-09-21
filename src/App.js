@@ -6,8 +6,6 @@ import * as contactsApi from 'services/contacts-api';
 
 contactsApi.getAllContacts();
 
-
-
 function App() {
   return (
     <Container>

@@ -1,6 +1,6 @@
-import { Formik, Form, Field, ErrorMessage  } from 'formik';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import "yup-phone";
+import 'yup-phone';
 import s from './ContactForm.module.css';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
@@ -19,7 +19,7 @@ const validationSchema = Yup.object({
 
 const ContactForm = () => {
   const dispatch = useDispatch();
-  
+
   return (
     <Formik
       initialValues={{ name: '', number: '' }}
@@ -34,13 +34,8 @@ const ContactForm = () => {
         <label htmlFor="name" className={s.label}>
           Name{' '}
         </label>
-        <Field
-          className={s.input}
-          type="text"
-          name="name"
-          placeholder="Name"
-        />
-        <ErrorMessage name="name"/>
+        <Field className={s.input} type="text" name="name" placeholder="Name" />
+        <ErrorMessage name="name" />
         <label htmlFor="number" className={s.label}>
           Number{' '}
         </label>
@@ -51,7 +46,7 @@ const ContactForm = () => {
           placeholder="+7********"
         />
         <ErrorMessage name="number" />
-        <Button/>
+        <Button />
       </Form>
     </Formik>
   );

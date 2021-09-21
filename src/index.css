@@ -1,10 +1,12 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  background-color: #c0c0c0; 
+  background-color: #c0c0c0;
   color: #ff0000;
   font-weight: normal;
   color: darkslategrey;
@@ -12,4 +14,3 @@ body {
   font-style: oblique;
   text-shadow: -1px -1px #000;
 }
-

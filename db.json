@@ -1,11 +1,6 @@
 {
   "contacts": [
     {
-      "id": "id-1",
-      "name": "Rosie Simpson",
-      "number": "459-12-56"
-    },
-    {
       "id": "id-2",
       "name": "Hermione Kline",
       "number": "443-89-12"
@@ -26,11 +21,6 @@
       "id": "vk_ZCt8"
     },
     {
-      "name": "Ekaterina",
-      "number": "+79123885430",
-      "id": "VdijiAB"
-    },
-    {
       "name": "Ivan",
       "number": "+79143926712",
       "id": "H5QNij9"
@@ -39,6 +29,16 @@
       "name": "Yan",
       "number": "+79143926712",
       "id": "wUczVJm"
+    },
+    {
+      "name": "Katerina",
+      "number": "+79876543212",
+      "id": "aENGrrq"
+    },
+    {
+      "name": "Ekaterina",
+      "number": "+79123885430",
+      "id": "wjcwmk-"
     }
   ]
 }
