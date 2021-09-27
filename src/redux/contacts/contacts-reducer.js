@@ -1,7 +1,6 @@
 import { combineReducers } from 'redux';
 import { createReducer } from '@reduxjs/toolkit';
 import { changeFilter } from './contacts-actions';
-import { CheckedContactName } from 'utils/CheckedContactName';
 import {
   fetchAllContacts,
   addContact,
@@ -10,8 +9,7 @@ import {
 
 const item = createReducer([], {
   [fetchAllContacts.fulfilled]: (_, { payload }) => payload,
-  [addContact.fulfilled]: (state, { payload }) =>
-    CheckedContactName(state, payload),
+  [addContact.fulfilled]: (state, { payload }) => [...state, payload],
   [deleteContact.fulfilled]: (state, { payload }) =>
     state.filter(({ id }) => id !== payload),
 });

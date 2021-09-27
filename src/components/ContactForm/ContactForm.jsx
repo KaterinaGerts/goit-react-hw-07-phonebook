@@ -3,9 +3,10 @@ import * as Yup from 'yup';
 import 'yup-phone';
 import s from './ContactForm.module.css';
 import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/contacts/contacts-operations';
 import Button from 'components/Button';
+import {getContacts} from 'redux/contacts/contacts-selectors';
 
 const validationSchema = Yup.object({
   name: Yup.string()
@@ -19,15 +20,24 @@ const validationSchema = Yup.object({
 
 const ContactForm = () => {
   const dispatch = useDispatch();
+  const contacts = useSelector(getContacts);
 
   return (
     <Formik
       initialValues={{ name: '', number: '' }}
       validationSchema={validationSchema}
+
+
       onSubmit={(values, { resetForm }) => {
-        const { name, number } = values;
-        dispatch(addContact({ name, number }));
         resetForm();
+        const { name, number } = values;          
+          const checkedName = contacts.find(
+            contact => contact.name.toLowerCase() === name.toLowerCase(),
+          );        
+          if (checkedName) {
+            alert(`${name} is already in contacts!`);           
+            return contacts;
+          } dispatch(addContact({ name, number }));      
       }}
     >
       <Form className={s.form}>
